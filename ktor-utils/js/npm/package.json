@@ -1,0 +1,11 @@
+{
+  "name": "ktor-utils",
+  "version": "$version",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+  }
+}
