@@ -1,4 +1,8 @@
 pluginManagement {
+    repositories {
+        maven { url 'https://dl.bintray.com/orangy/maven' }
+        gradlePluginPortal()
+    }
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == "kotlin2js") {

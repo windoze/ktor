@@ -29,7 +29,7 @@ class BaselinePipeline {
 }
 
 private fun <T> runAndEnsureNoSuspensions(block: suspend () -> T): T {
-    @Suppress("DEPRECATION")
+    @Suppress("DEPRECATION_ERROR")
     val result = block.startCoroutineUninterceptedOrReturn(NoopContinuation)
     if (result == COROUTINE_SUSPENDED) {
         throw IllegalStateException("function passed to runAndEnsureNoSuspensions suspended")
