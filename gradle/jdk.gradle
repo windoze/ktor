@@ -8,7 +8,8 @@ project.ext.jdk8Modules = [
     'ktor-server-core', 'ktor-server-host-common', 'ktor-server-servlet', 'ktor-server-netty', 'ktor-server-tomcat',
     'ktor-server-test-host',
 
-    'ktor-websockets', 'ktor-webjars', 'ktor-metrics', 'ktor-server-sessions', 'ktor-auth', 'ktor-auth-jwt'
+    'ktor-websockets', 'ktor-webjars', 'ktor-metrics', 'ktor-server-sessions', 'ktor-auth', 'ktor-auth-jwt',
+    'ktor-server-benchmarks'
 ]
 
 project.ext.jdk7Modules = [
