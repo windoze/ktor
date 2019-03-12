@@ -1,24 +1,42 @@
 package io.ktor.client.features.cache
 
+import io.ktor.client.*
+import io.ktor.client.call.*
+import io.ktor.client.request.*
 import io.ktor.client.response.*
 import io.ktor.http.*
 import io.ktor.util.*
 import io.ktor.util.date.*
+import kotlinx.coroutines.io.*
+import kotlinx.io.core.*
+
+internal suspend fun HttpCacheEntry(response: HttpResponse): HttpCacheEntry {
+    val body = response.content.readRemaining().readBytes()
+    return HttpCacheEntry(response.cacheExpires(), response.varyKeys(), response, body)
+}
 
 @KtorExperimentalAPI
-class HttpCacheEntry(
-    val expires: GMTDate,
-    val varyKeys: Map<String, String>,
-    response: HttpResponse
+class HttpCacheEntry internal constructor(
+    internal val expires: GMTDate,
+    internal val varyKeys: Map<String, String>,
+    internal val response: HttpResponse,
+    internal val body: ByteArray
 ) {
-    val requestHeaders: Headers = TODO()
+    internal val requestHeaders: Headers = response.call.request.headers
 
-    val responseHeaders: Headers = TODO()
+    internal val responseHeaders: Headers = Headers.build {
+        appendAll(response.headers)
+    }
 
-    constructor(response: HttpResponse) : this(response.cacheExpires(), response.varyKeys(), response)
+    internal fun produceResponse(): HttpResponse {
+        val call = HttpCacheCall(response.call.client)
+        call.response = HttpCacheResponse(call, body, response)
+        call.request = HttpCacheRequest(call, response.call.request)
 
-    fun produceResponse(): HttpResponse = TODO()
+        return call.response
+    }
 }
+
 
 internal fun HttpResponse.varyKeys(): Map<String, String> {
     val validationKeys = vary() ?: return emptyMap()
@@ -35,20 +53,39 @@ internal fun HttpResponse.varyKeys(): Map<String, String> {
 
 internal fun HttpResponse.cacheExpires(): GMTDate {
     val cacheControl = cacheControl()
-    
-     val smaxAge = cacheControl.firstOrNull { it.value.startsWith("s-max-age") }
+
+    val isPrivate = CacheControl.PRIVATE in cacheControl
+
+    val maxAgeKey = if (isPrivate) "s-max-age" else "max-age"
+
+    val maxAge = cacheControl.firstOrNull { it.value.startsWith(maxAgeKey) }
         ?.value?.split("=")
         ?.get(1)?.toInt()
 
+    if (maxAge != null) {
+        return call.response.requestTime + maxAge * 1000L
+    }
 
-    val maxAge = cacheControl.firstOrNull { it.value.startsWith("max-age") }
-        ?.value?.split("=")
-        ?.get(1)?.toInt()
-
-
+    headers[HttpHeaders.Expires]?.fromHttpToGmtDate()?.let { return it }
+    return GMTDate()
 }
 
 @KtorExperimentalAPI
 internal fun HttpCacheEntry.isValid(): Boolean {
-    TODO()
+    val cacheControl = responseHeaders[HttpHeaders.CacheControl]?.let { parseHeaderValue(it) } ?: emptyList()
+    return expires >= GMTDate() && !(CacheControl.MUST_REVALIDATE in cacheControl)
+}
+
+private class HttpCacheCall(client: HttpClient) : HttpClientCall(client)
+
+private class HttpCacheRequest(
+    override val call: HttpCacheCall, origin: HttpRequest
+) : HttpRequest by origin
+
+private class HttpCacheResponse(
+    override val call: HttpCacheCall, body: ByteArray, origin: HttpResponse
+) : HttpResponse by origin {
+    override val content: ByteReadChannel = ByteReadChannel(body)
+
+    override fun close() {}
 }

@@ -1,6 +1,7 @@
 package io.ktor.client.features.cache
 
 import io.ktor.client.*
+import io.ktor.client.engine.*
 import io.ktor.client.features.*
 import io.ktor.client.request.*
 import io.ktor.client.response.*
@@ -16,11 +17,12 @@ internal object CacheControl {
 }
 
 class HttpCache(
-    val publicStorage: HttpCacheStorage,
-    val privateStorage: HttpCacheStorage
+    private val publicStorage: HttpCacheStorage,
+    private val privateStorage: HttpCacheStorage
 ) {
     class Config {
         var publicStorage: HttpCacheStorage = HttpCacheStorage.Default
+
         var privateStorage: HttpCacheStorage = HttpCacheStorage.Empty
     }
 
@@ -28,7 +30,11 @@ class HttpCache(
         override val key: AttributeKey<HttpCache> = AttributeKey("HttpCache")
 
         override fun prepare(block: Config.() -> Unit): HttpCache {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            val config = Config().apply(block)
+
+            with(config) {
+                return HttpCache(publicStorage, privateStorage)
+            }
         }
 
         override fun install(feature: HttpCache, scope: HttpClient) {
@@ -72,7 +78,7 @@ class HttpCache(
         }
     }
 
-    private fun cacheResponse(response: HttpResponse): HttpResponse {
+    private suspend fun cacheResponse(response: HttpResponse): HttpResponse {
         val request = response.call.request
 
         val responseCacheControl: List<HeaderValue> = response.cacheControl()
@@ -92,11 +98,10 @@ class HttpCache(
         val cacheControl = response.cacheControl()
 
         val storage = if (CacheControl.PRIVATE in cacheControl) privateStorage else publicStorage
-        val cache = storage.find(url, response.varyKeys()).produceResponse()
+        val cache = storage.find(url, response.varyKeys())
 
-        storage.store(url, HttpCacheEntry(response.cacheExpires(), response.varyKeys(), cache))
-
-        return cache
+        storage.store(url, HttpCacheEntry(response.cacheExpires(), response.varyKeys(), cache.response, cache.body))
+        return cache.produceResponse()
     }
 
 
@@ -115,12 +120,21 @@ class HttpCache(
 }
 
 
-@InternalAPI
 private fun mergedHeadersLookup(
     requestHeaders: HeadersBuilder,
     content: OutgoingContent
-): (String) -> String {
-    TODO()
+): (String) -> String = block@{ header ->
+    return@block when (header) {
+        HttpHeaders.ContentLength -> content.contentLength?.toString() ?: ""
+        HttpHeaders.ContentType -> content.contentType?.toString() ?: ""
+        HttpHeaders.UserAgent -> {
+            content.headers[HttpHeaders.UserAgent] ?: requestHeaders[HttpHeaders.UserAgent] ?: KTOR_DEFAULT_USER_AGENT
+        }
+        else -> {
+            val value = content.headers.getAll(header) ?: requestHeaders.getAll(header) ?: emptyList()
+            value.joinToString(";")
+        }
+    }
 }
 
 @Suppress("KDocMissingDocumentation")

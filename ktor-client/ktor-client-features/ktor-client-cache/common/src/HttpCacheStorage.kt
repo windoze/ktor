@@ -8,7 +8,9 @@ import io.ktor.util.*
 interface HttpCacheStorage {
 
     fun store(url: Url, value: HttpCacheEntry)
+
     fun find(url: Url, varyKeys: Map<String, String>): HttpCacheEntry
+
     fun findByUrl(url: Url): List<HttpCacheEntry>
 
     companion object {
@@ -17,7 +19,7 @@ interface HttpCacheStorage {
     }
 }
 
-internal fun HttpCacheStorage.store(url: Url, value: HttpResponse): HttpCacheEntry {
+internal suspend fun HttpCacheStorage.store(url: Url, value: HttpResponse): HttpCacheEntry {
     val result = HttpCacheEntry(value)
     store(url, result)
     return result
