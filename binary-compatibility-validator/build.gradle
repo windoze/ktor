@@ -31,5 +31,7 @@ jvmTest {
 }
 
 binaryCompatibilityModules.each {
-    jvmTest.dependsOn(it.dependencyProject.getTasksByName("jvmJar", true))
+    def dependencyTask = it.dependencyProject.path + ":jvmJar"
+    jvmTest.dependsOn(dependencyTask)
+//    jvmTest.dependsOn(it.dependencyProject.getTasksByName("jvmJar", true))
 }

@@ -50,6 +50,8 @@ internal fun startServer(): ApplicationEngine {
                     setCompressionEndpoints()
                 }
             }
+            route("/cache") {
+            }
         }
     }.start()
 }
