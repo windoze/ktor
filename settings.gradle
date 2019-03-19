@@ -49,6 +49,7 @@ includeEx ':ktor-client:ktor-client-features:ktor-client-json:ktor-client-jackso
 includeEx ':ktor-client:ktor-client-features:ktor-client-auth'
 includeEx ':ktor-client:ktor-client-features:ktor-client-auth-basic'
 includeEx ':ktor-client:ktor-client-features:ktor-client-websocket'
+includeEx ':ktor-client:ktor-client-features:ktor-client-websocket:ktor-client-jetfire'
 includeEx ':ktor-client:ktor-client-features:ktor-client-logging'
 includeEx ':ktor-features:ktor-freemarker'
 includeEx ':ktor-features:ktor-mustache'

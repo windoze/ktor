@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8F0D7372B4353DCEBC32200638D3C3E3 /* ktor_client_jetfire-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 13AB4A63754920D7B0C6608EFE034043 /* Build configuration list for PBXAggregateTarget "ktor_client_jetfire-iOS" */;
+			buildPhases = (
+				C01FB89916417F63333384CEAEBAB34D /* [CP-User] Build ktor_client_jetfire */,
+			);
+			dependencies = (
+				34F54B8BC6E22BBDA7AD9CD9B7BE6674 /* PBXTargetDependency */,
+			);
+			name = "ktor_client_jetfire-iOS";
+		};
+		ACD9180585F228CFE56D4F7C985FE948 /* ktor_client_jetfire-macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AD59F92407A3CD8FF904639F6A4881FC /* Build configuration list for PBXAggregateTarget "ktor_client_jetfire-macOS" */;
+			buildPhases = (
+				A0DFD184A508F581579C0305E7DA4BE2 /* [CP-User] Build ktor_client_jetfire */,
+			);
+			dependencies = (
+				DFCF7160A6DE3CC4AA1D227944D46CB6 /* PBXTargetDependency */,
+			);
+			name = "ktor_client_jetfire-macOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		012561337B3E579C43B8AE5D3B44ADA7 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32EA55C5BC4C359CB75C83FC8974C5 /* JFRWebSocket.m */; };
+		05D3F75444F1F7616A8CAC0C4F59888C /* jetfire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 378DE49C03E5767916885A5B7C5187BF /* jetfire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B6DEEA1FAD560E1F3388FD2A135927E /* JFRSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8503746F5A5F50B64A74B459B368E5 /* JFRSecurity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1370D3688A61D9A402F222638C9D25C2 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32EA55C5BC4C359CB75C83FC8974C5 /* JFRWebSocket.m */; };
+		34A9790BF340DC7EC4CE4E3127F1DC01 /* jetfire-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8678D99B1CE61C13751639F1E5FB698C /* jetfire-macOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42308E6F788F3DDCA7E561BED0F999A6 /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F02EF74A364B4B367CFB86F6AD819DF2 /* JFRSecurity.m */; };
+		4634A9DF1B1BAD471B219CEA2B4138F6 /* Pods-ktor-client-jetfire-osx-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F180652817937099DFCC15140EC9098B /* Pods-ktor-client-jetfire-osx-dummy.m */; };
+		5355F4EF3118CB3EB9D8502DD459E283 /* JFRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7F7C6654B0F19EC08404620B2C2234 /* JFRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5CAA6635486B71517ABD16A10D474AF8 /* jetfire-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C644805D442D534AE57D0A5A486C3 /* jetfire-macOS-dummy.m */; };
+		7635F6109AD2E39DBAA0050627FC992D /* JFRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7F7C6654B0F19EC08404620B2C2234 /* JFRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E2CDB09773AAAF5182992DB919A5C42 /* JFRSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8503746F5A5F50B64A74B459B368E5 /* JFRSecurity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD1916AB061A119827918EAFB7B9CA6F /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F02EF74A364B4B367CFB86F6AD819DF2 /* JFRSecurity.m */; };
+		DC2BC36606EEC2A1D9059B183CEB5687 /* jetfire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D79AC9A7AE5DABDA65C5D62A4C5958E3 /* jetfire-iOS-dummy.m */; };
+		E9260948D659F7F535BF3AB6922673A2 /* Pods-ktor-client-jetfire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6E5ADE5B7CF6A0B274E049F61221 /* Pods-ktor-client-jetfire-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5109CAACCCC5B617C908635904692882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACD9180585F228CFE56D4F7C985FE948;
+			remoteInfo = "ktor_client_jetfire-macOS";
+		};
+		6C8758B0CAB9550F8D922E74EACCA67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F201F569BFD8A03056DB0E2E799B47A;
+			remoteInfo = "jetfire-macOS";
+		};
+		9216BB22733382ACA6E8476EC50180B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F0D7372B4353DCEBC32200638D3C3E3;
+			remoteInfo = "ktor_client_jetfire-iOS";
+		};
+		9256EE7684897BAD997D59E6AE552B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237494B784368E3A37BB686615D360CA;
+			remoteInfo = "jetfire-iOS";
+		};
+		A19A69D2BA1E3D8926F2EF5C8C3E896E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237494B784368E3A37BB686615D360CA;
+			remoteInfo = "jetfire-iOS";
+		};
+		EB481B5AE0DE6D1CDB561A638B96748C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F201F569BFD8A03056DB0E2E799B47A;
+			remoteInfo = "jetfire-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015D01CA99FE21E4F765790AF030DFB7 /* Pods-ktor-client-jetfire-osx-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ktor-client-jetfire-osx-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BDD6572EC9F91449471661CEE1D35D2 /* Pods-ktor-client-jetfire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ktor-client-jetfire.release.xcconfig"; sourceTree = "<group>"; };
+		1D42085C8A8AE2E592A84031E0255C19 /* ktor_client_jetfire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ktor_client_jetfire.framework; path = build/cocoapods/framework/ktor_client_jetfire.framework; sourceTree = "<group>"; };
+		1F8C3C30571F8A2F886677E9FEEEDEC4 /* ktor_client_jetfire.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ktor_client_jetfire.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		23FEA9D4F30813F26B0BC7409744B3DC /* jetfire-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "jetfire-macOS-prefix.pch"; path = "../jetfire-macOS/jetfire-macOS-prefix.pch"; sourceTree = "<group>"; };
+		2ED4CF26EC75409593CC40E41749A75F /* jetfire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "jetfire-iOS.modulemap"; sourceTree = "<group>"; };
+		378DE49C03E5767916885A5B7C5187BF /* jetfire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jetfire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3B8503746F5A5F50B64A74B459B368E5 /* JFRSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFRSecurity.h; sourceTree = "<group>"; };
+		46617437481E4EDEBF57F73EC7ADC840 /* libjetfire-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libjetfire-iOS.a"; path = "libjetfire-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47089B475E5C94F3E5879B3F24BA0A26 /* Pods-ktor-client-jetfire-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ktor-client-jetfire-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5393711D21B22402F71B3A88B9BF2E0C /* libPods-ktor-client-jetfire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ktor-client-jetfire.a"; path = "libPods-ktor-client-jetfire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586D3F85F795D2296643DA1875DEEBFF /* jetfire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "jetfire-iOS.xcconfig"; sourceTree = "<group>"; };
+		5C06FCF0C766CCD5638D4C6691A545F0 /* libPods-ktor-client-jetfire-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ktor-client-jetfire-osx.a"; path = "libPods-ktor-client-jetfire-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		632A166B09F53C280A76BFD1658E06C2 /* jetfire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jetfire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		8678D99B1CE61C13751639F1E5FB698C /* jetfire-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "jetfire-macOS-umbrella.h"; path = "../jetfire-macOS/jetfire-macOS-umbrella.h"; sourceTree = "<group>"; };
+		8D32EA55C5BC4C359CB75C83FC8974C5 /* JFRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFRWebSocket.m; sourceTree = "<group>"; };
+		8DBD6E5ADE5B7CF6A0B274E049F61221 /* Pods-ktor-client-jetfire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ktor-client-jetfire-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F7F7C6654B0F19EC08404620B2C2234 /* JFRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFRWebSocket.h; sourceTree = "<group>"; };
+		B10146114FD6C2A435B13883C612814D /* jetfire-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "jetfire-macOS.modulemap"; path = "../jetfire-macOS/jetfire-macOS.modulemap"; sourceTree = "<group>"; };
+		B34C644805D442D534AE57D0A5A486C3 /* jetfire-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "jetfire-macOS-dummy.m"; path = "../jetfire-macOS/jetfire-macOS-dummy.m"; sourceTree = "<group>"; };
+		BC065D1C2F2A72B2025FB99A12571FC1 /* libjetfire-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libjetfire-macOS.a"; path = "libjetfire-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEFD1C4EA4EF77E05FD52143DA64926 /* ktor_client_jetfire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ktor_client_jetfire-iOS.xcconfig"; sourceTree = "<group>"; };
+		C640E622E60FF1DB4AAC96DB2985E4B5 /* jetfire-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "jetfire-macOS.xcconfig"; path = "../jetfire-macOS/jetfire-macOS.xcconfig"; sourceTree = "<group>"; };
+		CA27C0FD44811C206ACF395D973724F8 /* Pods-ktor-client-jetfire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ktor-client-jetfire.debug.xcconfig"; sourceTree = "<group>"; };
+		CE9C0EA50BA67FF38E6B54147B1047A3 /* Pods-ktor-client-jetfire-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ktor-client-jetfire-osx.release.xcconfig"; sourceTree = "<group>"; };
+		D402F485E531BD05FD221CE73DB12FC7 /* Pods-ktor-client-jetfire-osx-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ktor-client-jetfire-osx-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D79AC9A7AE5DABDA65C5D62A4C5958E3 /* jetfire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "jetfire-iOS-dummy.m"; sourceTree = "<group>"; };
+		EC55032AA31FD1E7FB384AA80A4F9B04 /* Pods-ktor-client-jetfire-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ktor-client-jetfire-acknowledgements.plist"; sourceTree = "<group>"; };
+		F02EF74A364B4B367CFB86F6AD819DF2 /* JFRSecurity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFRSecurity.m; sourceTree = "<group>"; };
+		F180652817937099DFCC15140EC9098B /* Pods-ktor-client-jetfire-osx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ktor-client-jetfire-osx-dummy.m"; sourceTree = "<group>"; };
+		F1DED96C83578E34CCC33C62FF995529 /* ktor_client_jetfire-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ktor_client_jetfire-macOS.xcconfig"; path = "../ktor_client_jetfire-macOS/ktor_client_jetfire-macOS.xcconfig"; sourceTree = "<group>"; };
+		F3AB6644C80D070A24EF80AD51837A2A /* Pods-ktor-client-jetfire-osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ktor-client-jetfire-osx.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9FE3192945821454946F8C556B442A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7297A62C5733A281AC6B2631A2A1A2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8309A2B3BF46E4F0759C04B38A89E74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DAD12B187199CADD88225186162269F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08452E1257DA42586E49FBFCD7A84ECA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDEFD1C4EA4EF77E05FD52143DA64926 /* ktor_client_jetfire-iOS.xcconfig */,
+				F1DED96C83578E34CCC33C62FF995529 /* ktor_client_jetfire-macOS.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/ktor_client_jetfire-iOS";
+			sourceTree = "<group>";
+		};
+		08BA60008EE6F071B55E5C3C1F808300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46617437481E4EDEBF57F73EC7ADC840 /* libjetfire-iOS.a */,
+				BC065D1C2F2A72B2025FB99A12571FC1 /* libjetfire-macOS.a */,
+				5393711D21B22402F71B3A88B9BF2E0C /* libPods-ktor-client-jetfire.a */,
+				5C06FCF0C766CCD5638D4C6691A545F0 /* libPods-ktor-client-jetfire-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A098DBAB35B3E90531B5F37F5300231 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6AAB2C55A34F0A3D3BEB8820B283AE /* jetfire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28C71631D1BD56E215A85BC919D331BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D42085C8A8AE2E592A84031E0255C19 /* ktor_client_jetfire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D6AAB2C55A34F0A3D3BEB8820B283AE /* jetfire */ = {
+			isa = PBXGroup;
+			children = (
+				3B8503746F5A5F50B64A74B459B368E5 /* JFRSecurity.h */,
+				F02EF74A364B4B367CFB86F6AD819DF2 /* JFRSecurity.m */,
+				9F7F7C6654B0F19EC08404620B2C2234 /* JFRWebSocket.h */,
+				8D32EA55C5BC4C359CB75C83FC8974C5 /* JFRWebSocket.m */,
+				8852B24E34F43BE192FA75A0F0781004 /* Support Files */,
+			);
+			name = jetfire;
+			path = jetfire;
+			sourceTree = "<group>";
+		};
+		6640B60B3145D1DCB761A7230777F583 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B085D1B481E3C531405415F470725A6C /* ktor_client_jetfire */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7B3D9F9E530E5DC7D0A7ED15EA5BE2AF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				823D98605A3B5181428C585AC3BA0B2D /* Pods-ktor-client-jetfire */,
+				DB523DDDFBFA61414AE1C5C04D5A2D55 /* Pods-ktor-client-jetfire-osx */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		823D98605A3B5181428C585AC3BA0B2D /* Pods-ktor-client-jetfire */ = {
+			isa = PBXGroup;
+			children = (
+				47089B475E5C94F3E5879B3F24BA0A26 /* Pods-ktor-client-jetfire-acknowledgements.markdown */,
+				EC55032AA31FD1E7FB384AA80A4F9B04 /* Pods-ktor-client-jetfire-acknowledgements.plist */,
+				8DBD6E5ADE5B7CF6A0B274E049F61221 /* Pods-ktor-client-jetfire-dummy.m */,
+				CA27C0FD44811C206ACF395D973724F8 /* Pods-ktor-client-jetfire.debug.xcconfig */,
+				1BDD6572EC9F91449471661CEE1D35D2 /* Pods-ktor-client-jetfire.release.xcconfig */,
+			);
+			name = "Pods-ktor-client-jetfire";
+			path = "Target Support Files/Pods-ktor-client-jetfire";
+			sourceTree = "<group>";
+		};
+		8852B24E34F43BE192FA75A0F0781004 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ED4CF26EC75409593CC40E41749A75F /* jetfire-iOS.modulemap */,
+				586D3F85F795D2296643DA1875DEEBFF /* jetfire-iOS.xcconfig */,
+				D79AC9A7AE5DABDA65C5D62A4C5958E3 /* jetfire-iOS-dummy.m */,
+				632A166B09F53C280A76BFD1658E06C2 /* jetfire-iOS-prefix.pch */,
+				378DE49C03E5767916885A5B7C5187BF /* jetfire-iOS-umbrella.h */,
+				B10146114FD6C2A435B13883C612814D /* jetfire-macOS.modulemap */,
+				C640E622E60FF1DB4AAC96DB2985E4B5 /* jetfire-macOS.xcconfig */,
+				B34C644805D442D534AE57D0A5A486C3 /* jetfire-macOS-dummy.m */,
+				23FEA9D4F30813F26B0BC7409744B3DC /* jetfire-macOS-prefix.pch */,
+				8678D99B1CE61C13751639F1E5FB698C /* jetfire-macOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/jetfire-iOS";
+			sourceTree = "<group>";
+		};
+		9219E7B5BB09AAE9FFF06FD7ABB4FFD3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C3C30571F8A2F886677E9FEEEDEC4 /* ktor_client_jetfire.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B085D1B481E3C531405415F470725A6C /* ktor_client_jetfire */ = {
+			isa = PBXGroup;
+			children = (
+				28C71631D1BD56E215A85BC919D331BD /* Frameworks */,
+				9219E7B5BB09AAE9FFF06FD7ABB4FFD3 /* Pod */,
+				08452E1257DA42586E49FBFCD7A84ECA /* Support Files */,
+			);
+			name = ktor_client_jetfire;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6640B60B3145D1DCB761A7230777F583 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				1A098DBAB35B3E90531B5F37F5300231 /* Pods */,
+				08BA60008EE6F071B55E5C3C1F808300 /* Products */,
+				7B3D9F9E530E5DC7D0A7ED15EA5BE2AF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB523DDDFBFA61414AE1C5C04D5A2D55 /* Pods-ktor-client-jetfire-osx */ = {
+			isa = PBXGroup;
+			children = (
+				D402F485E531BD05FD221CE73DB12FC7 /* Pods-ktor-client-jetfire-osx-acknowledgements.markdown */,
+				015D01CA99FE21E4F765790AF030DFB7 /* Pods-ktor-client-jetfire-osx-acknowledgements.plist */,
+				F180652817937099DFCC15140EC9098B /* Pods-ktor-client-jetfire-osx-dummy.m */,
+				F3AB6644C80D070A24EF80AD51837A2A /* Pods-ktor-client-jetfire-osx.debug.xcconfig */,
+				CE9C0EA50BA67FF38E6B54147B1047A3 /* Pods-ktor-client-jetfire-osx.release.xcconfig */,
+			);
+			name = "Pods-ktor-client-jetfire-osx";
+			path = "Target Support Files/Pods-ktor-client-jetfire-osx";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		160A5296883B1E648E894305EE77E989 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A9790BF340DC7EC4CE4E3127F1DC01 /* jetfire-macOS-umbrella.h in Headers */,
+				0B6DEEA1FAD560E1F3388FD2A135927E /* JFRSecurity.h in Headers */,
+				7635F6109AD2E39DBAA0050627FC992D /* JFRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B32C8F5DCE7188145C791E2A8DFE6F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C84957EA1F274E79319F58F93324AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D3F75444F1F7616A8CAC0C4F59888C /* jetfire-iOS-umbrella.h in Headers */,
+				8E2CDB09773AAAF5182992DB919A5C42 /* JFRSecurity.h in Headers */,
+				5355F4EF3118CB3EB9D8502DD459E283 /* JFRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB67509EB53518190B2A64A17FD1F8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		237494B784368E3A37BB686615D360CA /* jetfire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756040C0941C2F45E156A955FCAFCC50 /* Build configuration list for PBXNativeTarget "jetfire-iOS" */;
+			buildPhases = (
+				8C84957EA1F274E79319F58F93324AA6 /* Headers */,
+				835F8A3A3A54FE53BB73E59E08267218 /* Sources */,
+				7297A62C5733A281AC6B2631A2A1A2BF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jetfire-iOS";
+			productName = "jetfire-iOS";
+			productReference = 46617437481E4EDEBF57F73EC7ADC840 /* libjetfire-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2873508964DEAC1224BC450309FE356B /* Pods-ktor-client-jetfire-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7419F7456117D987F8A4D5DBA4F922 /* Build configuration list for PBXNativeTarget "Pods-ktor-client-jetfire-osx" */;
+			buildPhases = (
+				6B32C8F5DCE7188145C791E2A8DFE6F4 /* Headers */,
+				A35B2860585247D614891248B787DBC6 /* Sources */,
+				9DAD12B187199CADD88225186162269F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9152D6EDA684A800DF249D6809BE53A /* PBXTargetDependency */,
+				D5F61EC2253230E8A073B0A3F4CB7BD1 /* PBXTargetDependency */,
+			);
+			name = "Pods-ktor-client-jetfire-osx";
+			productName = "Pods-ktor-client-jetfire-osx";
+			productReference = 5C06FCF0C766CCD5638D4C6691A545F0 /* libPods-ktor-client-jetfire-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42FA1E4CF13E39A937BFA3A258EDEC6F /* Pods-ktor-client-jetfire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B2BB3E2D82B0AF3C6DEEB105F4E78A /* Build configuration list for PBXNativeTarget "Pods-ktor-client-jetfire" */;
+			buildPhases = (
+				CDB67509EB53518190B2A64A17FD1F8E /* Headers */,
+				E5966110FCAE5A0196AF3BFFA00C129B /* Sources */,
+				5D9FE3192945821454946F8C556B442A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				771C803C3A594852C28417E334328CE2 /* PBXTargetDependency */,
+				24417D067DAD5077F3B126A06C470070 /* PBXTargetDependency */,
+			);
+			name = "Pods-ktor-client-jetfire";
+			productName = "Pods-ktor-client-jetfire";
+			productReference = 5393711D21B22402F71B3A88B9BF2E0C /* libPods-ktor-client-jetfire.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7F201F569BFD8A03056DB0E2E799B47A /* jetfire-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A881B9D26A8DDFEF3D1BAF61324BA7DD /* Build configuration list for PBXNativeTarget "jetfire-macOS" */;
+			buildPhases = (
+				160A5296883B1E648E894305EE77E989 /* Headers */,
+				2DF2E042A0BA1B336F5546AFF502C961 /* Sources */,
+				8309A2B3BF46E4F0759C04B38A89E74A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jetfire-macOS";
+			productName = "jetfire-macOS";
+			productReference = BC065D1C2F2A72B2025FB99A12571FC1 /* libjetfire-macOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 08BA60008EE6F071B55E5C3C1F808300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237494B784368E3A37BB686615D360CA /* jetfire-iOS */,
+				7F201F569BFD8A03056DB0E2E799B47A /* jetfire-macOS */,
+				8F0D7372B4353DCEBC32200638D3C3E3 /* ktor_client_jetfire-iOS */,
+				ACD9180585F228CFE56D4F7C985FE948 /* ktor_client_jetfire-macOS */,
+				42FA1E4CF13E39A937BFA3A258EDEC6F /* Pods-ktor-client-jetfire */,
+				2873508964DEAC1224BC450309FE356B /* Pods-ktor-client-jetfire-osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0DFD184A508F581579C0305E7DA4BE2 /* [CP-User] Build ktor_client_jetfire */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] Build ktor_client_jetfire";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                set -ev\n                REPO_ROOT=`realpath \"$PODS_TARGET_SRCROOT\"`\n                $REPO_ROOT/gradlew -p \"$REPO_ROOT\" syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C01FB89916417F63333384CEAEBAB34D /* [CP-User] Build ktor_client_jetfire */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] Build ktor_client_jetfire";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                set -ev\n                REPO_ROOT=`realpath \"$PODS_TARGET_SRCROOT\"`\n                $REPO_ROOT/gradlew -p \"$REPO_ROOT\" syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DF2E042A0BA1B336F5546AFF502C961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAA6635486B71517ABD16A10D474AF8 /* jetfire-macOS-dummy.m in Sources */,
+				42308E6F788F3DDCA7E561BED0F999A6 /* JFRSecurity.m in Sources */,
+				012561337B3E579C43B8AE5D3B44ADA7 /* JFRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835F8A3A3A54FE53BB73E59E08267218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC2BC36606EEC2A1D9059B183CEB5687 /* jetfire-iOS-dummy.m in Sources */,
+				AD1916AB061A119827918EAFB7B9CA6F /* JFRSecurity.m in Sources */,
+				1370D3688A61D9A402F222638C9D25C2 /* JFRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35B2860585247D614891248B787DBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4634A9DF1B1BAD471B219CEA2B4138F6 /* Pods-ktor-client-jetfire-osx-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5966110FCAE5A0196AF3BFFA00C129B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9260948D659F7F535BF3AB6922673A2 /* Pods-ktor-client-jetfire-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24417D067DAD5077F3B126A06C470070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ktor_client_jetfire-iOS";
+			target = 8F0D7372B4353DCEBC32200638D3C3E3 /* ktor_client_jetfire-iOS */;
+			targetProxy = 9216BB22733382ACA6E8476EC50180B3 /* PBXContainerItemProxy */;
+		};
+		34F54B8BC6E22BBDA7AD9CD9B7BE6674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jetfire-iOS";
+			target = 237494B784368E3A37BB686615D360CA /* jetfire-iOS */;
+			targetProxy = A19A69D2BA1E3D8926F2EF5C8C3E896E /* PBXContainerItemProxy */;
+		};
+		771C803C3A594852C28417E334328CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jetfire-iOS";
+			target = 237494B784368E3A37BB686615D360CA /* jetfire-iOS */;
+			targetProxy = 9256EE7684897BAD997D59E6AE552B41 /* PBXContainerItemProxy */;
+		};
+		D5F61EC2253230E8A073B0A3F4CB7BD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ktor_client_jetfire-macOS";
+			target = ACD9180585F228CFE56D4F7C985FE948 /* ktor_client_jetfire-macOS */;
+			targetProxy = 5109CAACCCC5B617C908635904692882 /* PBXContainerItemProxy */;
+		};
+		DFCF7160A6DE3CC4AA1D227944D46CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jetfire-macOS";
+			target = 7F201F569BFD8A03056DB0E2E799B47A /* jetfire-macOS */;
+			targetProxy = 6C8758B0CAB9550F8D922E74EACCA67F /* PBXContainerItemProxy */;
+		};
+		E9152D6EDA684A800DF249D6809BE53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jetfire-macOS";
+			target = 7F201F569BFD8A03056DB0E2E799B47A /* jetfire-macOS */;
+			targetProxy = EB481B5AE0DE6D1CDB561A638B96748C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B6D3E45229AA156BFBB5A57104A296F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586D3F85F795D2296643DA1875DEEBFF /* jetfire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/jetfire-iOS/jetfire-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MODULEMAP_FILE = "Headers/Public/jetfire/jetfire-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = jetfire;
+				PRODUCT_NAME = "jetfire-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20D4E7DF03F5CB181356130E91CCDA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA27C0FD44811C206ACF395D973724F8 /* Pods-ktor-client-jetfire.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B13A2F0F817C47B30DF79982ED7AEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9C0EA50BA67FF38E6B54147B1047A3 /* Pods-ktor-client-jetfire-osx.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		64B107EF8082F15C55F45E2074A412CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DED96C83578E34CCC33C62FF995529 /* ktor_client_jetfire-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		67737B5809F909ABF9F30572F2867D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C640E622E60FF1DB4AAC96DB2985E4B5 /* jetfire-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/jetfire-macOS/jetfire-macOS-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Headers/Public/jetfire/jetfire-macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = jetfire;
+				PRODUCT_NAME = "jetfire-macOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7158F499158D46BA8084EC02216E1EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDD6572EC9F91449471661CEE1D35D2 /* Pods-ktor-client-jetfire.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7997C721AA14770EB6C8C475D8120750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AB6644C80D070A24EF80AD51837A2A /* Pods-ktor-client-jetfire-osx.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		87E5F07CF4A36C1A3260830D12F31DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9D85D12F080DAEEA5ADE58162FE210B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C640E622E60FF1DB4AAC96DB2985E4B5 /* jetfire-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/jetfire-macOS/jetfire-macOS-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Headers/Public/jetfire/jetfire-macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = jetfire;
+				PRODUCT_NAME = "jetfire-macOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		D5DAD4F2624A6AFF63F449E67CFBBFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEFD1C4EA4EF77E05FD52143DA64926 /* ktor_client_jetfire-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3FA65196FA91F31B952A25670D5A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586D3F85F795D2296643DA1875DEEBFF /* jetfire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/jetfire-iOS/jetfire-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MODULEMAP_FILE = "Headers/Public/jetfire/jetfire-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = jetfire;
+				PRODUCT_NAME = "jetfire-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E62A172B34AA62BAC9520F69023C3206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEFD1C4EA4EF77E05FD52143DA64926 /* ktor_client_jetfire-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4BB14FC9930EEF9FE62145169E7236C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F65EB04AAE26ECADC9440F5BED5A8A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DED96C83578E34CCC33C62FF995529 /* ktor_client_jetfire-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13AB4A63754920D7B0C6608EFE034043 /* Build configuration list for PBXAggregateTarget "ktor_client_jetfire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62A172B34AA62BAC9520F69023C3206 /* Debug */,
+				D5DAD4F2624A6AFF63F449E67CFBBFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E5F07CF4A36C1A3260830D12F31DF9 /* Debug */,
+				F4BB14FC9930EEF9FE62145169E7236C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756040C0941C2F45E156A955FCAFCC50 /* Build configuration list for PBXNativeTarget "jetfire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FA65196FA91F31B952A25670D5A78E /* Debug */,
+				1B6D3E45229AA156BFBB5A57104A296F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A881B9D26A8DDFEF3D1BAF61324BA7DD /* Build configuration list for PBXNativeTarget "jetfire-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67737B5809F909ABF9F30572F2867D83 /* Debug */,
+				9D85D12F080DAEEA5ADE58162FE210B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7419F7456117D987F8A4D5DBA4F922 /* Build configuration list for PBXNativeTarget "Pods-ktor-client-jetfire-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7997C721AA14770EB6C8C475D8120750 /* Debug */,
+				2B13A2F0F817C47B30DF79982ED7AEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD59F92407A3CD8FF904639F6A4881FC /* Build configuration list for PBXAggregateTarget "ktor_client_jetfire-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65EB04AAE26ECADC9440F5BED5A8A46 /* Debug */,
+				64B107EF8082F15C55F45E2074A412CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B2BB3E2D82B0AF3C6DEEB105F4E78A /* Build configuration list for PBXNativeTarget "Pods-ktor-client-jetfire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D4E7DF03F5CB181356130E91CCDA79 /* Debug */,
+				7158F499158D46BA8084EC02216E1EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

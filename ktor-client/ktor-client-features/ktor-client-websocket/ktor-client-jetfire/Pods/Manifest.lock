@@ -1,0 +1,23 @@
+PODS:
+  - jetfire (0.1.5)
+  - ktor_client_jetfire (1.2.0-SNAPSHOT):
+    - jetfire (= 0.1.5)
+
+DEPENDENCIES:
+  - ktor_client_jetfire (from `./`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - jetfire
+
+EXTERNAL SOURCES:
+  ktor_client_jetfire:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  jetfire: 60c16cd6ae0282928e24203eb93f03b89c1929ce
+  ktor_client_jetfire: eb4ccd7eaf8ae6ca238310879aa6ece2b5901713
+
+PODFILE CHECKSUM: f8ba5c229319101a98cedc4e2df65edd8a43e145
+
+COCOAPODS: 1.6.1

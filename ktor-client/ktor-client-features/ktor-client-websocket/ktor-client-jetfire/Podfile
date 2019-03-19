@@ -1,0 +1,22 @@
+target 'ktor-client-jetfire' do
+  platform :ios, '9.0'
+  use_modular_headers!
+  pod 'ktor_client_jetfire', :path => './'
+
+#  target 'ios' do
+#  end
+
+#  target 'osx' do
+#    platform :osx, '10.10'
+#  end
+
+#  target 'ktor-client-jetfire' do
+#    inherit! :search_paths
+#  end
+end
+
+target 'ktor-client-jetfire-osx' do
+  platform :osx, '10.10'
+  use_modular_headers!
+  pod 'ktor_client_jetfire', :path => './'
+end

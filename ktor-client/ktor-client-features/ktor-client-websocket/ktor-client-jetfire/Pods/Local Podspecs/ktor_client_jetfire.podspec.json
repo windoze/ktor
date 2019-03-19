@@ -1,0 +1,40 @@
+{
+  "name": "ktor_client_jetfire",
+  "version": "1.2.0-SNAPSHOT",
+  "homepage": "ktor.io",
+  "source": {
+    "git": "Not Published",
+    "tag": "Cocoapods/ktor_client_jetfire/1.2.0-SNAPSHOT"
+  },
+  "authors": "",
+  "license": "",
+  "summary": "ktor websockets for iOS with jetfire as the backend.",
+  "static_framework": true,
+  "vendored_frameworks": "build/cocoapods/framework/ktor_client_jetfire.framework",
+  "libraries": "c++",
+  "module_name": "ktor_client_jetfire_umbrella",
+  "dependencies": {
+    "jetfire": [
+      "0.1.5"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "KOTLIN_TARGET[sdk=iphonesimulator*]": "ios_x64",
+    "KOTLIN_TARGET[sdk=iphoneos*]": "ios_arm64",
+    "KOTLIN_TARGET[sdk=macosx*]": "macos_x64"
+  },
+  "script_phases": [
+    {
+      "name": "Build ktor_client_jetfire",
+      "execution_position": "before_compile",
+      "shell_path": "/bin/sh",
+      "script": "                set -ev\n                REPO_ROOT=`realpath \"$PODS_TARGET_SRCROOT\"`\n                $REPO_ROOT/gradlew -p \"$REPO_ROOT\" syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n"
+    }
+  ],
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

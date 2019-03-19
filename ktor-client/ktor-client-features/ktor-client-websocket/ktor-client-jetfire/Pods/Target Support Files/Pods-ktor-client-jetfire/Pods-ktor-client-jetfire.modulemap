@@ -1,0 +1,6 @@
+framework module Pods_ktor_client_jetfire {
+  umbrella header "Pods-ktor-client-jetfire-umbrella.h"
+
+  export *
+  module * { export * }
+}

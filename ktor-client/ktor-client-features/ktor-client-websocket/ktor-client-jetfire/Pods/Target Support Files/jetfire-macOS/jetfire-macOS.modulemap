@@ -1,0 +1,7 @@
+module jetfire {
+  umbrella header "jetfire-macOS-umbrella.h"
+  exclude header "jetfire-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

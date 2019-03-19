@@ -1,0 +1,21 @@
+apply plugin: "kotlin-native-cocoapods"
+
+
+project.ext["kotlin.native.cocoapods.cflags"] = """
+ -fmodule-map-file="/Users/jetbrains/work/ktor/ktor-client/ktor-client-features/ktor-client-websocket/ktor-client-jetfire/Pods/Headers/Public/jetfire/jetfire.modulemap"
+"""
+project.ext["kotlin.native.cocoapods.paths.headers"] = """
+ "/Users/jetbrains/work/ktor/ktor-client/ktor-client-features/ktor-client-websocket/ktor-client-jetfire/Pods/Headers/Public"
+"""
+project.ext["kotlin.native.cocoapods.paths.frameworks"] = """
+ "/Users/jetbrains/work/ktor/ktor-client/ktor-client-features/ktor-client-websocket/ktor-client-jetfire/Pods/../build/cocoapods/framework"
+"""
+
+kotlin {
+    cocoapods {
+        pod("jetfire", "0.1.5")
+    }
+    sourceSets.darwinMain.dependencies {
+        api project(":ktor-client:ktor-client-features:ktor-client-websocket")
+    }
+}

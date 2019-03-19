@@ -10,13 +10,15 @@ import io.ktor.util.date.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.*
 import kotlinx.coroutines.io.*
+import kotlinx.coroutines.io.writer
 import kotlinx.io.core.*
 import platform.Foundation.*
 import platform.darwin.*
 import kotlin.coroutines.*
 
-class IosClientEngine(override val config: IosClientEngineConfig) : HttpClientEngine {
-    // TODO: replace with UI dispatcher
+internal class IosClientEngine(
+    override val config: IosClientEngineConfig
+) : HttpClientEngine {
     override val dispatcher: CoroutineDispatcher = Dispatchers.Unconfined
 
     override val coroutineContext: CoroutineContext = dispatcher + SupervisorJob()
@@ -88,15 +90,7 @@ class IosClientEngine(override val config: IosClientEngineConfig) : HttpClientEn
 
         launch(callContext) {
             val content = request.content
-            val body = when (content) {
-                is OutgoingContent.ByteArrayContent -> content.bytes().toNSData()
-                is OutgoingContent.WriteChannelContent -> writer(dispatcher) {
-                    content.writeTo(channel)
-                }.channel.readRemaining().readBytes().toNSData()
-                is OutgoingContent.ReadChannelContent -> content.readFrom().readRemaining().readBytes().toNSData()
-                is OutgoingContent.NoContent -> null
-                else -> throw UnsupportedContentTypeException(content)
-            }
+            val body = readOutgoingContent(content)?.toNSData()
 
             body?.let { nativeRequest.setHTTPBody(it) }
             session.dataTaskWithRequest(nativeRequest).resume()
@@ -108,4 +102,17 @@ class IosClientEngine(override val config: IosClientEngineConfig) : HttpClientEn
     }
 }
 
+private suspend fun readOutgoingContent(content: OutgoingContent): ByteArray? = when (content) {
+    is OutgoingContent.ByteArrayContent -> content.bytes()
+    is OutgoingContent.WriteChannelContent -> {
+        val channel = ByteChannel()
+        GlobalScope.launch(Dispatchers.Unconfined) {
+            content.writeTo(channel)
+        }
 
+        channel.readRemaining().readBytes()
+    }
+    is OutgoingContent.ReadChannelContent -> content.readFrom().readRemaining().readBytes()
+    is OutgoingContent.NoContent -> null
+    else -> throw UnsupportedContentTypeException(content)
+}
